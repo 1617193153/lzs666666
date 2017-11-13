@@ -1,0 +1,98 @@
+Type "copyright", "credits" or "license()" for more information.
+>>> dict1 = { 'abc': 456 }
+>>> dict1
+{'abc': 456}
+>>> dict1['abc']
+456
+>>> dick1['ddd']
+
+Traceback (most recent call last):
+  File "<pyshell#3>", line 1, in <module>
+    dick1['ddd']
+NameError: name 'dick1' is not defined
+>>> dict1['ddd']
+
+
+Traceback (most recent call last):
+  File "<pyshell#4>", line 1, in <module>
+    dict1['ddd']
+KeyError: 'ddd'
+>>> dict1['abc']
+456
+>>> dict1['abc']=678
+>>> dict1['abc']
+678
+>>> del dict1['abc']
+>>> dict1
+{}
+>>> users = {
+	 'A':{
+    'first':'yu',
+    'last':'lei',
+    'location':'hs',
+    },
+    'B':{
+    'first':'liu',
+    'last':'wei',
+    'location':'hs',    
+    },
+}
+>>> for username, userinfo in users.items():
+	print("userid：" + username)
+	
+KeyboardInterrupt
+>>> print("userid：" + username)
+
+Traceback (most recent call last):
+  File "<pyshell#15>", line 1, in <module>
+    print("userid：" + username)
+NameError: name 'username' is not defined
+>>> print("userid：" + username)
+
+Traceback (most recent call last):
+  File "<pyshell#16>", line 1, in <module>
+    print("userid：" + username)
+NameError: name 'username' is not defined
+>>> for username, userinfo in users.items():
+	print("userid：" + username)
+	print("userid：" + username)
+
+	
+userid：A
+userid：A
+userid：B
+userid：B
+>>> 
+KeyboardInterrupt
+>>> userid：A
+SyntaxError: invalid syntax
+>>> for username, userinfo in users.items():
+	print("userid：" + username)
+	print("userinfo:" + str(userinfo))
+
+	
+userid：A
+userinfo:{'last': 'lei', 'location': 'hs', 'first': 'yu'}
+userid：B
+userinfo:{'last': 'wei', 'location': 'hs', 'first': 'liu'}
+>>> dict = {'Name': 'Zara', 'Age': 7}
+>>> print "Value : %s" % dict.keys()
+Value : ['Age', 'Name']
+>>> print "Key : %s" % dict.keys()
+Key : ['Age', 'Name']
+>>> print "Key : %s" % dict.keys()
+Key : ['Age', 'Name']
+>>> print "Key : %s" % dict.keys()
+Key : ['Age', 'Name']
+>>> for key in dict.keys():
+	print key
+
+Age
+Name
+>>> for key in dict.keys():
+	print dict[key]
+
+	
+7
+Zara
+>>> 
